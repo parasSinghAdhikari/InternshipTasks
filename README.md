@@ -39,7 +39,6 @@ bash
 python calculator.py
 You will see a prompt:
 
-text
 COMMAND LINE CALCULATOR
 ======================
 calc>
