@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "description": "Do the 45 min excercise",
+    "completed": true,
+    "priority": "high",
+    "category": "general",
+    "created_date": "2025-09-23 00:32:40",
+    "due_date": null,
+    "completion_date": "2025-09-23 00:34:24",
+    "notes": ""
+  },
+  {
+    "id": 2,
+    "description": "Go to the market on monday",
+    "completed": false,
+    "priority": "low",
+    "category": "general",
+    "created_date": "2025-09-23 00:41:32",
+    "due_date": "2025-09-29",
+    "completion_date": null,
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "description": "Do the house cleaning",
+    "completed": false,
+    "priority": "medium",
+    "category": "House",
+    "created_date": "2025-09-23 00:42:44",
+    "due_date": "2025-09-25",
+    "completion_date": null,
+    "notes": ""
+  }
+]

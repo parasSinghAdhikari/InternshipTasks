@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[31]:
 
 
 """Command Line Calculator A well-structured calculator """
@@ -13,18 +9,12 @@ from enum import Enum
 import re
 
 
-# In[32]:
-
-
 class OperationType(Enum):
     """Enumeration for different types of calculator operations"""
     BASIC = "basic"
     SCIENTIFIC = "scientific"
     LOGARITHMIC = "logarithmic"
     CONVERSION = "conversion"
-
-
-# In[33]:
 
 
 class Operation(ABC):
@@ -44,9 +34,6 @@ class Operation(ABC):
     def validate_args(self, *args) -> bool:
         """Validate the arguments for this operation"""
         pass
-
-
-# In[34]:
 
 
 # type(a) == int                                             isinstance(a, int)
@@ -70,8 +57,6 @@ class BasicOperation(Operation):
             raise ZeroDivisionError("Cannot divide by zero")
         return isinstance(a, (int, float)) and isinstance(b, (int, float))
 
-
-# In[35]:
 
 
 class UnaryOperation(Operation):
@@ -97,9 +82,6 @@ class UnaryOperation(Operation):
         return isinstance(a, (int, float))
 
 
-# In[36]:
-
-
 class PowerOperation(Operation):
     """Power operations """
     def __init__(self):
@@ -116,9 +98,6 @@ class PowerOperation(Operation):
         if base < 0 and not isinstance(exponent, int) and not exponent.is_integer():
             raise ValueError("Cannot raise negative number to non-integer power")
         return isinstance(base, (int, float)) and isinstance(exponent, (int, float))
-
-
-# In[50]:
 
 
 class CalculatorEngine:
@@ -219,10 +198,6 @@ class CalculatorEngine:
                 if f"{op.symbol}: {op.name}" not in grouped[op.operation_type]:
                     grouped[op.operation_type].append(f"{op.symbol}: {op.name}")
             return grouped
-
-
-
-# In[52]:
 
 
 class CalculatorCLI:
